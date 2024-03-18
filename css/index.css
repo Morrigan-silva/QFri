@@ -1,0 +1,176 @@
+*{
+    margin: 0 auto;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Quicksand", sans-serif;
+    font-family: "Quicksand", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+}
+
+/*Fontes------------------------------*/
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
+
+/*Menu Horizontal------------------------------*/
+
+header{
+    background: rgb(255, 255, 255, 0.9);
+}
+
+header > .inteface{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 7px;
+}
+
+#list-menu ul li{
+    display: inline;
+}
+
+#list-menu ul li a{
+    color: #629599;
+    display: inline-block;
+    text-decoration: none; /* retira a linha sob as palavras*/
+    padding: 10px; /*espaçamento X entre eles*/
+}
+
+#list-menu ul li a:hover{
+    color: #81C5CB;
+}
+
+#logo a img{
+    width: 70px;
+}
+
+.search-box{
+    background: #83bdc1;
+    height: 35px;
+    border-radius: 40px;
+    padding: 10px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.search-box a img{
+    height: 15px;
+}
+
+.pesquisa{
+    background: none;
+    border: 0;
+    outline: 0;
+
+    font-size: 14px;
+    color: white;
+}
+
+.bnt-pesq{
+    width: 50px;
+    height: 50px;
+}
+
+input::placeholder{
+    color: white;
+}
+
+.bt{
+    background-color: #EFFEFF;
+    border-color: #629599;
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 15px;
+}
+
+.bt a{
+    text-decoration: none;
+    color: #629599;
+    font-size: 16px;
+}
+
+.btns{
+    display: inline-block;
+    padding: 10px;
+}
+
+/*Corpo------------------------------*/
+
+
+
+footer{
+    margin-top: auto;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 2.5rem;            /* altura do rodapé */
+    display: flex;
+    background-color: #629599;
+    color: white;
+    padding-top: 10px;
+}
+
+.corpo{
+    position: relative;
+    min-height: 100vh;
+}
+
+/*topo do site----------------------------------------------------------------------------------------*/
+section.topo-do-site{
+    padding: 40px 4%;
+    background-image: url(../img/qfri2.png);
+
+    height: 90vh;
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+}
+
+/*
+.slogan{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    padding-left: 9%;
+}
+*/
+
+/*feminino----------------------------------------------------------------------------------------*/
+
+section.femi{
+    padding: 80px 4%;
+}
+
+.flex{
+    display: flex;
+}
+
+.titulo{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+.img-loj{
+    border-radius: 15px;
+    width: 200px;
+    height: 280px;
+    background-color: aqua;
+}
+
+.moda{
+    border-radius: 15px;
+    width: 200px;
+    height: 280px;
+}
+
+section.masc{
+    padding: 80px 1%;
+}
+
+section.infa{
+    padding: 80px 4%;
+}

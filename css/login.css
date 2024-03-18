@@ -1,0 +1,91 @@
+*{
+    margin: 0 auto;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Quicksand", sans-serif;
+    font-family: "Quicksand", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+}
+
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    background-image: url(../img/imglogo.jpg);
+}
+form {
+    width: 300px;
+}
+
+.cont{
+    background: rgb(255, 255, 255, 0.6);
+    border-radius: 15px;
+    width: 400px;
+}
+
+input {
+    border: none;
+    border-radius: 5px;
+}
+input, button {
+    padding: 10px;
+    width: -webkit-fill-available;
+}
+button {
+    cursor: pointer;
+    margin-bottom: 10px;
+    color: white;
+}
+
+button:active {
+    opacity: 0.8;
+}
+.clear {
+    background: #81C5CB;
+    border: none;
+    color: white;
+    border-radius: 10px;
+}
+.solid {
+    background: #81C5CB;
+    border: none;
+    border-radius: 10px;
+}
+
+/*cadastrar*/
+.outline {
+    background: #629599;
+    color: white;
+    border: 3px solid #629599;
+    border-radius: 10px;
+}
+button[disabled] {
+    opacity: 0.8;
+    color: #629599;
+}   
+
+label{
+    color: #4b6f71;
+}
+
+#logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+img{
+    width: 150px;
+}
+
+.error{
+    color: red;
+    display: none;
+}

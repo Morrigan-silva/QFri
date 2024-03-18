@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tela de Login</title>
+    <link rel="stylesheet" href="../css/login.css">
+    <link rel="icon" href="../img/QF.png">
+
+</head>
+<body>
+    <div class="cont">
+        <div id="logo">
+            <img src="../img/logo-removebg-preview.png" alt="logo">
+        </div>
+        <form>
+            
+            <div style="margin-bottom: 10px;">
+                <div><label>Digite seu Email</label></div>
+                <input type="email" name="email" id="email" placeholder="seu@email.com" onchange="onChangeEmail()"/>
+                <div class="error" id="email-required-error">Email é obrigatório</div>
+                <div class="error" id="email-invalid-error">Email é inválido</div>
+            </div> 
+            <div style="margin-bottom: 10px;">
+                <div><label>Digite sua Senha</label></div>
+                <input type="password" name="password" id="password" placeholder="Senha" onchange="onChangePassword()"/>
+                <div class="error" id="password-required-error">Senha é obrigatória</div>
+            </div>
+            <div>
+                <button type="button" class="solid" id="login-button" disabled="true" onclick="login()">Entrar</button>
+            </div>
+            <div>
+                <button type="button" class="clear" id="recover-password-button" disabled="true">Recuperar senha</button>
+            </div>
+            <div>
+                <button type="button" class="outline" onclick="registrar()">Cadastrar</button>
+            </div>
+        </form>
+    </div>
+    <script src="../Script/login.js"> </script>
+    <script src="../Script/validações.js"> </script>
+    <script src="https://www.gstatic.com/firebasejs/10.8.1/firebase-app-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/10.8.1/firebase-auth-compat.js"></script>
+    <script>
+        const firebaseConfig = {
+            apiKey: "AIzaSyCF2fY4GDlMJlDOKxTT-Mf_Za8yy_ql_HI",
+            authDomain: "qfri-6f3e4.firebaseapp.com",
+            projectId: "qfri-6f3e4",
+            storageBucket: "qfri-6f3e4.appspot.com",
+            messagingSenderId: "328610634048",
+            appId: "1:328610634048:web:8689cf4fcdd85742cd82a5"
+        };
+        firebase.initializeApp(firebaseConfig);
+
+        console.log('antes');
+        firebase.auth().signInWithEmailAndPassword("evellin.g@acad.ifma.edu.br", "123456a").then(response => {
+            console.log('success', response)
+        }).catch(error => {
+            console.log('error', error)
+        });
+        console.log('depois')
+
+    </script>
+</body>
+</html>

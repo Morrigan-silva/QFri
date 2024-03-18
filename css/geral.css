@@ -1,0 +1,33 @@
+.clear {
+    background: #81C5CB;
+    border: none;
+    color: white;
+    border-radius: 10px;
+}
+.solid {
+    background: #81C5CB;
+    border: none;
+    border-radius: 10px;
+}
+
+/*cadastrar*/
+.outline {
+    background: #629599;
+    color: white;
+    border: 3px solid #629599;
+    border-radius: 10px;
+}
+
+.error{
+    color: red;
+    display: none;
+}
+
+button:active {
+    opacity: 0.8;
+}
+
+button[disabled] {
+    opacity: 0.8;
+    color: #629599;
+}
